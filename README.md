@@ -22,15 +22,23 @@ This is a simple API built with Node.js and Express that generates QR code image
 ### 2. Installation
 
 ```bash
-git clone https://github.com/xernix/qrcode-generator.git
+git clone https://git.pernec.com.my/DevOps/qrcode-generator.git
 cd qrcode-generator
-npm install express qrcode
+npm install express qrcode sharp path fs url
 ```
 
 ### 3. Running the API
 
+- for qrcode without any logo embedded:
 ```bash
-node server.js
+node app.js
+```
+
+- for qrcode with logo embedded.
+- logo.png file must be in the same directory as app-logo.js
+
+```bash
+node app-logo.js
 ```
 
 The API will listen on port 3001 (or the port specified in the `PORT` environment variable).
@@ -193,4 +201,3 @@ Contributions are welcome! Please open an issue or submit a pull request.
 ## License
 
 MIT (Or your chosen license)
-
